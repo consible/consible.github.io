@@ -1,0 +1,40 @@
+html, body{height:100%; margin:0;padding:0;background-color:#eee}
+
+.container-fluid{
+  height:100%;
+  display:table;
+  width: 100%;
+  padding: 0;
+}
+
+.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+
+.centering {
+  float:none;
+  margin:0 auto;
+}
+
+#triangle-topright {
+    position: relative;
+}
+#triangle-topright:before {
+    content:'';
+    border-top: 200px solid lightblue;
+    border-left: 200px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.triangle-text {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg) translateZ(0px);
+    // Put onto GPU as text is rendered better this way. transform: rotate(45deg) translateZ(0px);
+    position: absolute;
+    font-size:18px;
+    font-weight:bold;
+    top: 60px;
+    right: 0;
+    width: 130px;
+}
